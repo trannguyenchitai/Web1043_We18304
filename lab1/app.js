@@ -1,3 +1,8 @@
+let y = 10;
+//set y value of 10
+console.log();
+alert();
+
 var x = prompt("Input n: ");
 var x1 = parseInt(n);
 document.write(n);
