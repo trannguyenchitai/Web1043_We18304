@@ -8,3 +8,4 @@ let a1 = parseInt(a);
 let c = parseInt(a);
 document.write(c);
 console.log(c);
+alert(c);
