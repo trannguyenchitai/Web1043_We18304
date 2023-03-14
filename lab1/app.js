@@ -9,9 +9,4 @@ let b = prompt("Nhap so nguyen b: ");
 let b1 = parseInt(b);
 let c = parseInt(a1 + b1);
 document.write(c);
-console.log(c);
 
-let d = prompt("Nhap so nguyen d: ");
-let e = result (c + d);
-document.write(e);
-console.log(e);

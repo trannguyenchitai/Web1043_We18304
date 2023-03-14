@@ -1,6 +1,6 @@
-const a = prompt("Nhap a: ");
-const b = prompt("Nhap b: ");
-const c = prompt("Nhap c: ");
+let a = prompt("Nhap a: ");
+let b = prompt("Nhap b: ");
+let c = prompt("Nhap c: ");
 
 if(a == 0){
     // bx + c = 0
@@ -10,7 +10,7 @@ if(a == 0){
     if (delta == 0){
         const x = -b / (2 * a);
 
-        document.writeln("Phuong trinh co nghiem kep: x = $(x)");
+        document.writeln("Phuong trinh co nghiem kep: x = "+x);
     }else if (delta < 0){
         document.writeln("Phuong trinh vo nghiem");
     }else{
@@ -18,7 +18,7 @@ if(a == 0){
         const x1 = (-b + Math.sqrt(delta)) / (2 * a);
         const x2 = (-b - Math.sqrt(delta)) / (2 * a);
 
-        document.writeln("Nghiem x1 = $(x1)");
-        document.writeln("Nghiem x2 = $(x2)");
+        document.writeln("Nghiem x1 = "+x1);
+        document.writeln("Nghiem x2 = "+x2);
     }
 }
