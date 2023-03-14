@@ -5,15 +5,15 @@ let a = parseInt(prompt("Nhap a"));
  //kiemtra
  if(a+b>c && b+c>a && a+c>b){
     if(a*a==b*b+c*c || b*b==a*a+c*c || c*c== a*a+b*b){
-        document.write('Day la tam giac vuong');
+        document.write('Đây là tam giác vuông');
 
     }else if(a==b && b==c){
-        document.write('Day la tam giac can');
+        document.write('Đây là tam giác cân');
     }else{
-        document.write('Day la tam giac thuong');
+        document.write('Đây là tam giác thường');
     }
 
  }else{
-    document.write('Ba cạnh a,b,c không phai la ba canh cua mot tam giac!');
+    document.write('Ba cạnh a,b,c không phải la ba cạnh của một tam giác!');
 
  }
