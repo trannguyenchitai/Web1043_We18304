@@ -1,8 +1,8 @@
-let lich = ["Tue", "Thu", "Sat", "Nine"];
-lich[4] = "Mon";
-lich[5] = "We";
-lich[6] = "Fri";
-lich[7] = "Sun";
-lich.pop("Nine");
+ let arr = ["Tue", "Thu", "Sat", "Nine"];
 
-console.log(lich);
+ arr.splice(0, 0, "Mon");
+ arr.splice(2, 0, "Wed");
+ arr.splice(4, 0, "Fri");
+ arr.splice(6, 1, "Sun");
+
+ document.write('Xuat chuoi ngay trong tuan: ' + arr);
