@@ -1,6 +1,6 @@
-let a = prompt("Nhap a: ");
-let b = prompt("Nhap b: ");
-let c = prompt("Nhap c: ");
+let a = prompt("Nhập a: ");
+let b = prompt("Nhập b: ");
+let c = prompt("Nhập c: ");
 
 if(a == 0){
     // bx + c = 0
