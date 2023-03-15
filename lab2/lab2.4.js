@@ -3,6 +3,6 @@ lich[4] = "Mon";
 lich[5] = "We";
 lich[6] = "Fri";
 lich[7] = "Sun";
-lich.pop();
+lich.pop("Nine");
 
 console.log(lich);
