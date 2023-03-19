@@ -1,4 +1,4 @@
-function tinhDiemTrungBinhSwitch() {
+function tinhDiemBangSwitch() {
     let toan = parseFloat(prompt("Nhập điểm Toán: "));
     let ly = parseFloat(prompt("Nhập điểm Lý: "));
     let hoa = parseFloat(prompt("Nhập điểm Hóa: "));
@@ -39,11 +39,11 @@ function tinhDiemTrungBinhSwitch() {
         xepLoai = "Yếu";
         break;
     }
-    alert("Điểm trung bình: " + diemTB.toFixed(2) + "\n Xếp loại: " + xepLoai);
+    alert("Điểm trung bình: " + diemTB.toFixed(2) + "\nXếp loại: " + xepLoai);
   }
 
 
-function tinhDiemTrungBinhIfElse() {
+function tinhDiemBangIfElse() {
     let toan = parseFloat(prompt("Nhập điểm Toán: "));
     let ly = parseFloat(prompt("Nhập điểm Lý: "));
     let hoa = parseFloat(prompt("Nhập điểm Hóa: "));
@@ -80,6 +80,6 @@ function tinhDiemTrungBinhIfElse() {
       xepLoai = "Yếu";
     }
   
-    alert("Điểm trung bình: " + diemTB.toFixed(2) + "\n Xếp Loại: " + xepLoai);
+    alert("Điểm trung bình: " + diemTB.toFixed(2) + "\nXếp Loại: " + xepLoai);
   }
   
