@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="lab3.1.js"></script>
 </head>
+
 <body>
     <script>
-        let chon;
-        do {
-          chon = parseInt(
-            prompt(
-              "1. Tính điểm bằng switch case.\n2. Tính điểm bằng if else.\n0. Thoát"
-            )
-          );
-          switch (chon) {
-            case 1:
-              tinhDiemBangIfElse();
-              break;
-            case 2:
-              tinhDiemBangSwitch();
-              break;
-            case 0:
-              alert("Cảm ơn bạn đã sử dụng");
-              break;
-  
-            default:
-              alert("Xin mời chọn lại chức năng");
-              break;
-          }
-        } while (chon != 0);
-      </script>
+        function tinhDiemTrungBinhBangIfElse() {
+            let diemToan = parseFloat(prompt("Nhập điểm Toán:"));
+            let diemLy = parseFloat(prompt("Nhập điểm Lý:"));
+            let diemHoa = parseFloat(prompt("Nhập điểm Hóa:"));
+            let diemSinh = parseFloat(prompt("Nhập điểm Sinh:"));
+            if (diemToan < 0 || diemToan > 10 ||
+                diemLy < 0 || diemLy > 10 ||
+                diemHoa < 0 || diemHoa > 10 ||
+                diemSinh < 0 || diemSinh > 10) {
+                alert("Điểm nhập vào không hợp lệ!");
+                return;
+            }
+            let diemTrungBinh = (diemToan + diemLy + diemHoa + diemSinh) / 4;
+            let xepLoai;
+            if (diemTrungBinh >= 9 && diemTrungBinh <= 10) {
+                xepLoai = "Giỏi";
+            } else if (diemTrungBinh >= 7 && diemTrungBinh < 9) {
+                xepLoai = "Khá";
+            } else if (diemTrungBinh >= 5 && diemTrungBinh < 7) {
+                xepLoai = "Trung Bình";
+            } else {
+                xepLoai = "Yếu";
+            }
+
+            alert(`Điểm trung bình của bạn là ${diemTrungBinh}, xếp loại ${xepLoai}`);
+        }
+        function tinhDiemTrungBinhBangSwitch() {
+            let diemToan = parseFloat(prompt("Nhập điểm Toán:"));
+            let diemLy = parseFloat(prompt("Nhập điểm Lý:"));
+            let diemHoa = parseFloat(prompt("Nhập điểm Hóa:"));
+            let diemSinh = parseFloat(prompt("Nhập điểm Sinh:"));
+
+            if (diemToan < 0 || diemToan > 10 ||
+                diemLy < 0 || diemLy > 10 ||
+                diemHoa < 0 || diemHoa > 10 ||
+                diemSinh < 0 || diemSinh > 10) {
+                alert("Điểm nhập vào không hợp lệ!");
+                return;
+            }
+
+            let diemTrungBinh = (diemToan + diemLy + diemHoa + diemSinh) / 4;
+
+            let xepLoai;
+            switch (true) {
+                case diemTrungBinh >= 9 && diemTrungBinh <= 10:
+                    xepLoai = "Giỏi";
+                    break;
+                case diemTrungBinh >= 7 && diemTrungBinh < 9:
+                    xepLoai = "Khá";
+                    break;
+                case diemTrungBinh >= 5 && diemTrungBinh < 7:
+                    xepLoai = "Trung Bình";
+                    break;
+                default:
+                    xepLoai = "Yếu";
+            }
+
+            alert(`Điểm trung bình của bạn là ${diemTrungBinh}, xếp loại ${xepLoai}`)
+        }
+        function main() {
+            while (true) {
+                let choice = prompt("Menu:\n1. Tính điểm trung bình bằng (if else)\n2. Tính điểm trung bình bằng (switch case)\n0. Thoát");
+                switch (choice) {
+                    case "1":
+                        tinhDiemTrungBinh();
+                        break;
+                    case "2":
+                        tinhDiemTrungBinhSwitch();
+                        break;
+                    case "0":
+                        return;
+                    default:
+                        alert("Chọn sai mời chọn lại");
+                }
+            }
+        }
+        main();
+    </script>
 </body>
+
 </html>
