@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="lab2.3.js"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <script>
+      let fullName = prompt("Nhập vào họ và tên của bạn:");
+      let gender = prompt("Nhập vào giới tính của bạn (Nam hoặc Nữ):");
+
+      let nameParts = fullName.split(" ");
+      let firstName = nameParts.pop();
+      let lastName = nameParts.shift();
+      let middleName = nameParts.join(" ");
+
+      if (gender.toLowerCase() === "nam") {
+        middleName = "Văn";
+      } else if (gender.toLowerCase() === "nữ") {
+        middleName = "Vẽ";
+      }
+
+      let newFullName = lastName + " " + middleName + " " + firstName;
+
+      document.write(" <br>" + "Tên ban đầu : " + fullName.toUpperCase());
+      document.write(" <br>" + "Họ: " + lastName);
+      document.write(" <br>" + "Tên đệm: " + middleName);
+      document.write(" <br>" + "Tên: " + firstName);
+      document.write(" <br>" + "Tên mới: " + newFullName.toUpperCase());
+    </script>
+  </body>
 </html>
