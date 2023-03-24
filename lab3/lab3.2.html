@@ -52,30 +52,21 @@
       <input type="button" value="/" onclick="set_num(this.value)" />
     </div>
     <script>
-      // Cho kết quả bằng chuỗi rỗng
       var number = "";
-      // Get element của input có id = dapan và gắn và dA
       var dA = document.getElementById("dapan");
       function set_num(value) {
-        // Gắn number = value button
         number += value;
-        // Gắn value của id dapan bằng biến number
         dA.value = number;
       }
       function xoa() {
-        // Gắn biến number bằng 0
         number = "0";
-        // Gắn value của id dapan bằng number
         dA.value = number;
       }
       function result() {
-        // Nếu number bằng chuỗi rỗng hoặc bằng 0 thì thông báo "Vui lòng nhập phép tính"
         if (number == "" || number == 0) {
           alert("Vui lòng nhập phép tính");
         }
-        // Gắn value của dapan bằng kết quả
         dA.value = eval(dA.value);
-        // Gắn number bằng kết quả
         number = dA.value;
       }
     </script>
