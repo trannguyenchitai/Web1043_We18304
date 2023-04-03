@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab5.1.css">
+    <script src="lab5.1.js"></script>
+    <style>
+        .row{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25% ;
+            background-size: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h5>Todo List</h5>
+    <div class="container">
+        <label for="new-task">Add Item</label><input id="new-task" type="text">
+        <label for="new-task">Description</label><textarea id="description" type="text" name="description"></textarea>
+        <hr>
+        <button>ADD</button>
+        <h3>List Tasks</h3>
+        <section id="list_container">
+            <div class="row">
+                <div class="task-name">Name</div>
+                <div class="task-des">Description</div>
+                <div class="task-del">Del</div>
+                <div class="task-edit">Edit</div>
+            </div>
+            <div class="row">
+                <div class="task-name"><input type="2text" value="task 1"></div>
+                <div class="task-des"><input type="2text" value="di hoc"></div>
+                <button>Del</button>
+                <div class="task-edit"><button>EDIT</button>
+            </div>
+            </div>
+        </section>
+    </div>
+        
+
+        
+  
+</body>
+</html>
