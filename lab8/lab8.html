@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<video id="myVideo">
+  <source id="mp4_src" src="img/Haikyuu!! Trailer.mp4" type="video/mp4">
+  <source id="ogg_src"  src="img/Haikyuu!! Trailer.ogg" type="video/ogg">
+</video>
+
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button> 
+<button onclick="play/pause" type="button">play/pause</button>
+
+<script>
+var x = document.getElementById("myVideo"); 
+
+function playVid() { 
+  x.play(); 
+} 
+
+function pauseVid() { 
+  x.pause(); 
+} 
+</script>
+
+
+</body>
+</html>
