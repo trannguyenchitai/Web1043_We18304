@@ -1,28 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 <body>
+  <video id="myVideo">
+    <source id="mp4_src" src="img/Haikyuu!! Trailer.mp4" type="video/mp4">
+    <source id="ogg_src"  src="img/Haikyuu!! Trailer.ogg" type="video/ogg">
+  </video>
+  
+  <div class="main">
+  <button onclick="playVid()" type="button">Play Video</button>
+  <button onclick="pauseVid()" type="button">Pause Video</button> 
+  <button onclick="stopVid()" type="button">Stop</button>
+  <button onclick="increaseVolume()" type="button">Volume +</button>
+  <button onclick="decreaseVolume()" type="button">Volume -</button>
+  <button onclick="enableLoop()" type="button">Enable loop</button>
+  <button onclick="disableLoop()" type="button">Disable loop</button>
+</div>
 
-<video id="myVideo">
-  <source id="mp4_src" src="img/Haikyuu!! Trailer.mp4" type="video/mp4">
-  <source id="ogg_src"  src="img/Haikyuu!! Trailer.ogg" type="video/ogg">
-</video>
-
-<button onclick="playVid()" type="button">Play Video</button>
-<button onclick="pauseVid()" type="button">Pause Video</button> 
-<button onclick="play/pause" type="button">play/pause</button>
-
-<script>
-var x = document.getElementById("myVideo"); 
-
-function playVid() { 
-  x.play(); 
-} 
-
-function pauseVid() { 
-  x.pause(); 
-} 
-</script>
-
-
+  <script>
+  var x = document.getElementById("myVideo"); 
+  
+  function playVid() { 
+    x.play(); 
+  } 
+  
+  function pauseVid() { 
+    x.pause(); 
+  } 
+  
+  function stopVid(){
+    x.pause();
+    if(x.currentTime){x.currentTime = 0; }
+  }
+  
+  function increaseVolume(){
+    if(x.volume < 1)
+      x.volume = parseFloat(x.volume + 0.1).toFixed(1);
+  }
+  
+  function decreaseVolume(){
+    if(x.volume > 0)
+      x.volume = parseFloat(x.volume - 0.1).toFixed(1);
+  }
+  
+  function enableLoop() { 
+    x.loop = true;
+    x.load();
+  } 
+  
+  function disableLoop() { 
+    x.loop = false;
+    x.load();
+  } 
+  </script>
 </body>
 </html>
