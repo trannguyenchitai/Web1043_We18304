@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 50%;
+            background-color: lightblue;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+        }
+        .leftc{
+            width: 150px;
+            height: 250px;
+            border: 3px solid lightsalmon;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .rightc{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+        }
+        .item{
+            padding: 2px 20px 2px 20px;
+            border: 1px dashed palevioletred;
+            margin: 3px;
+            text-align: center;
+        }
+        h5{
+            font-size: 20px;
+            color: gray;
+        }
+        p{
+            color: chocolate;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h5>Lab7: Demo Drag & Drop</h5>
+        <p>Drag in item from the left column to into the rectangle</p>
+        <div class="main">
+            <div class="leftc">
+                <div class="bin">
+                    BIN
+                </div>
+            </div>
+            <div class="rightc">
+                <span class="item" id="one">ONE</span>
+                <span class="item" id="two">TWO</span>
+                <span class="item" id="three">THREE</span>
+                <span class="item" id="four">FOUR</span>
+                <span class="item" id="five">FIVE</span>
+            </div>
+        </div>
+    </div>
+    <script>
+                let items = document.getElementsByClassName("item");
+                for (let i = 0; i < items.length; i++){
+                    let item = items[i];
+                    item.setAttribute("draggable", true);
+                    item.addEventListener("dragstart", (e) => {
+                        e.dataTransfer.setData("itemId", item.id);
+                        // console.log(item.id);
+                    });
+                }
+
+                let bin = document.getElementById("bin");
+                bin.addEventListener("dragover", (e) => {
+                    if(e.preventDefault) e.preventDefault();//allow drop
+                });
+
+                bin.addEventListener("drop", (e) => {
+                    let itemId = e.dataTransfer.getData("itemId");
+                    let item = document.getElementById(itemId);
+                    bin.appendChild(item);
+                });
+    </script>
+</body>
+</html>
