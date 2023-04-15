@@ -1,0 +1,134 @@
+.form {
+    font-family: "Courier New", Courier, monospace;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    background-color: #888888;
+    border-radius: 25px;
+  }
+  
+  #contact-form {
+    margin: 100px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid blACK;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: white;
+    display: flex;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #a9a9a9;
+  }
+  
+  #error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .content4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content4 .row3 {
+    max-width: 942px;
+    flex: 0 0 33.333333%;
+    max-width: 27%;
+    margin: 0 15px;
+}
+
+.content4 .row3 .col1 {
+    box-shadow: 0 0 30px 0 rgba(167, 167, 167, .16);
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.content4 .row3 .col1 .team_img {
+    position: relative;
+}
+
+.content4 .row3 .col1 .team_img .social {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+}
+
+.content4 .row3 .col1 .team_img .social ul::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.content4 .row3 .col1 .team_img .social ul {
+    background-color: rgba(255, 255, 255, 0.23);
+    position: relative;
+    border-radius: 50px;
+    margin: 0 30px;
+}
+
+.content4 .row3 .col1 .team_img .social ul:hover {
+    background: #fd7e14;
+    transition: 0.5s;
+}
+
+.content4 .row3 .col1 .team_img .social ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px 15px;
+}
+
+.content4 .row3 .col1 .team_img .social ul li {
+    color: white;
+    font-size: 15px;
+}
+
+.content4 .row3 .col1 .team_img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.content4 .row3 .col1 .team__content {
+    padding: 30px;
+}
+
+.content4 .row3 .col1 .team__content h5 a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
+
+.content4 .row3 .col1 .team__content p {
+    font-size: 14px;
+    margin-top: 0;
+}
