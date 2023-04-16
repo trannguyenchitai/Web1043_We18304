@@ -395,21 +395,16 @@
           dots[slideIndex - 1].className += " active";
           setTimeout(showSlides, 2500);
         }
-        document.getElementById("myBtn").addEventListener("click", moveTo);
-
-        function moveTo() {
-        document.getElementById("demo").innerHTML = moveTo();
-      }
-      function bigImg(x) {
+        function bigImg(x) {
         x.style.height = "300px";
         x.style.width = "300px";
   
-      }
+        }
 
-      function normalImg(x) {
-      x.style.height = "230px";
-      x.style.width = "230px";
-      }
+        function normalImg(x) {
+        x.style.height = "230px";
+        x.style.width = "230px";
+        }
       </script>
   </body>
 </html>
