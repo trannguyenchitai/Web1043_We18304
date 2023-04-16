@@ -20,30 +20,30 @@
             <h1>Elise</h1>
             <b>Dẫn Đầu Xu Hướng Thời Trang</b>
           </div>
-          <div class="wrap">
-            <form action="" class="search" method="post">
-              <input type="text" class="searchTerm" placeholder="Nhập nội dung" />
-              <button type="submit" class="searchButton">Search</button>
-            </form>
-          </div>
         </div>
         <div class="menu">
           <span class="home">
-            <a onclick="moveTo" href="" id="myBTN"> <b>Thời Trang</b><br /> </a>
-            <p id="click"></p>
+            <a href="#smooth3" id="myBTN"> <b>Trang Chủ</b><br /> </a>
           </span>
           <span class="home">
-            <a href=""> <b>Phụ Kiện</b><br /> </a>
+            <a href="#smooth" id="myBTN"> <b>Thời Trang</b><br /> </a>
+          </span>
+          <span class="home">
+            <a href="#smooth2" id="myBTN"> <b>Phụ Kiện</b><br /> </a>
+          </span>
+          <span class="home">
+            <a href="#smooth4" id="myBTN"> <b>Boss</b><br /> </a>
+          </span>
+          <span class="home">
+            <a href="#smooth5" id="myBTN"> <b>Form</b><br /> </a>
+          </span>
+          <span class="home">
+            <a href="#smooth6" id="myBTN"> <b>Footer</b><br /> </a>
           </span>
         </div>
-      </div>
+      </div><br>
 
-      <div class="partners">
-        <div class="p-tiem">
-          <img src="img/logo.jpg" width="170px" style="margin-top: 20px" />
-        </div>
-      </div>
-
+      <div class="scroll3" id="smooth3"></div>
       <div class="slideshow-container">
         <div class="mySlides fade">
           <img src="img/28.jpg" height="700px" width="1300px" />
@@ -64,21 +64,22 @@
       <br />
       <br />
       <br />
+      <div class="scroll" id="smooth">
       <div class="service">
         <h1>Sản Phẩm Nổi Bật: Thời Trang</h1>
         <div class="service-row">
           <div class="column">
             <div class="sanpham">
-              <div class="Ten"><b>Sơ Mi Hoa Loang Đính Hoa</b></div>
-              <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/9.jpg" alt="" width="230px" height="230px"/><br /><br />
-              <div class="Gia">1.298.000</div>
+              <div class="Ten"><b>Sơ Mi Hoa Loang Đính Hoa & Chân Váy Lưới Hoa Loang Dập Ly</b></div>
+              <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/10.jpg" alt="" width="230px" height="230px"/><br /><br />
+              <div class="Gia">2.500.000</div>
             </div>
           </div>
           <div class="column">
             <div class="sanpham">
-              <div class="Ten"><b>Chân Váy Lưới Hoa Loang Dập Ly</b></div>
-              <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/10.jpg" alt="" width="230px" height="230px"/><br /><br />
-              <div class="Gia">1.498.000 VND</div>
+              <div class="Ten"><b>Jupe Tơ Trắng Hoa Nổi Xòe Tầng</b></div>
+              <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/30.jpg" alt="" width="230px" height="230px"/><br /><br />
+              <div class="Gia">1.598.000 VND</div>
             </div>
           </div>
           <div class="column">
@@ -129,7 +130,8 @@
             </div>
             </div>
         </div><hr>
-        
+      </div>
+        <div class="scroll2" id="smooth2">
         <div class="service">
           <h1>Sản Phẩm Nổi Bật: Phụ Kiện</h1>
           <div class="service-row">
@@ -195,6 +197,8 @@
               </div>
             </div>
           </div><hr>
+        </div>
+        <div class="scoll4" id="smooth4">
           <section class="content4" >
             <div class="row3">
                 <div class="col1">
@@ -202,7 +206,7 @@
                         <img src="img/25.jpg" alt="">
                         <div class="social">
                             <ul>
-                                <li><i class="fa-brands fa-facebook"></i></li>
+                                <li><img src="" alt=""><i class="fa-brands fa-facebook"></i></li>
                                 <li><i class="fa-brands fa-twitter"></i></li>
                                 <li><i class="fa-brands fa-instagram"></i></li>
                                 <li><i class="fa-brands fa-linkedin-in"></i></li>
@@ -263,6 +267,7 @@
                 </div>
             </div>
         </section>
+      </div>
         <div>
           <br />
           <br />
@@ -274,9 +279,7 @@
             <br />
           </div>
         </div>
-        <br />
-        <br />
-        <br />
+        <div class="scroll5" id="smooth5">
         <div class="form" id="formdien">
           <form id="contact-form">
             <h2>FORM ĐIỀN THÔNG TIN</h2>
@@ -297,7 +300,9 @@
             />
             <button type="submit" class="button">Gửi</button>
           </form>
+        </div>
 
+        <div class="scroll6" id="smooth6">
           <div id="result"></div>
         </div>
         <footer id="footer">
@@ -360,12 +365,15 @@
               </div>
             </div>
           </div>
+        </div>
           <div class="footer-bottom"></div>
           <div class="fb-customerchat" page_id="111210178160483"></div>
         </footer>
       </div>
     </div>
     <script>
+        
+
         let slideIndex = 0;
         showSlides();
 
