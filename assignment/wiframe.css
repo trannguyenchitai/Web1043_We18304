@@ -283,6 +283,9 @@ body {
   .footer-title-pr ul li a {
     color: black;
   }
+  .footer-title-pr :hover{
+    color: lightblue;
+  }
   html {
     scroll-behavior: smooth;
   }
