@@ -209,7 +209,6 @@ body {
     text-decoration: none;
     color: black;
   }
-  /*dong ho*/
   .cd {
     background-image: url("https://toplist.vn/images/800px/elise-505298.jpg");
     width: 80%;
@@ -218,34 +217,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 230px;
-  }
-  
-  h1 {
-    color: #fff;
-    padding: 5px;
-    box-shadow: 0 0 20px white;
-    margin: 30px;
-  }
-  
-  .countdown {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-  }
-  
-  .countdown-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    margin: 15px;
-    background: black;
-    box-shadow: 0 0 30px #585858;
-    border-radius: 10px;
-    color: aliceblue;
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
   }
   /* FOOTER */
   #footer {
@@ -309,39 +280,96 @@ body {
   .col-md-5 {
     float: right;
   }
-  .footer-title-2 {
-    margin-left: -1 px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    color: black;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  .footer-title-pr ul li {
-    margin-bottom: 5px;
-    list-style: none;
-    font-size: 20px;
-    margin-left: 10px;
-  }
   .footer-title-pr ul li a {
     color: black;
-  }
-  .footer-title-pr ul li a .ti-facebook {
-    color: rgb(34, 34, 200);
-    background-color: white;
-    border-radius: 5px;
-  }
-  .footer-title-pr ul li a .ti-twitter-alt {
-    color: rgb(1, 193, 247);
-    background-color: white;
-    border-radius: 5px;
-  }
-  .footer-title-pr ul li a .ti-youtube {
-    color: red;
-    background-color: black;
-    border-radius: 5px;
   }
   html {
     scroll-behavior: smooth;
   }
+  .team_img :hover{
+    box-shadow: 3px 3px 5px 5px grey;
+  }
+  .content4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content4 .row3 {
+    max-width: 942px;
+    flex: 0 0 33.333333%;
+    max-width: 27%;
+    margin: 0 15px;
+}
+
+.content4 .row3 .col1 {
+    box-shadow: 0 0 30px 0 rgba(167, 167, 167, .16);
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.content4 .row3 .col1 .team_img {
+    position: relative;
+}
+
+.content4 .row3 .col1 .team_img .social {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+}
+
+.content4 .row3 .col1 .team_img .social ul::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.content4 .row3 .col1 .team_img .social ul {
+    background-color: rgba(255, 255, 255, 0.23);
+    position: relative;
+    border-radius: 50px;
+    margin: 0 30px;
+}
+
+.content4 .row3 .col1 .team_img .social ul:hover {
+    background: blue;
+    transition: 0.5s;
+}
+
+.content4 .row3 .col1 .team_img .social ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px 15px;
+}
+
+.content4 .row3 .col1 .team_img .social ul li {
+    color: white;
+    font-size: 15px;
+}
+
+.content4 .row3 .col1 .team_img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.content4 .row3 .col1 .team__content {
+    padding: 30px;
+}
+
+.content4 .row3 .col1 .team__content h5 a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
+
+.content4 .row3 .col1 .team__content p {
+    font-size: 14px;
+    margin-top: 0;
+}
